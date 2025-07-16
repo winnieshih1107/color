@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Color Picker</h2>
+        <button id="pickColor" class="pick-btn">Pick Color</button>
+        <div id="colorDisplay" class="color-display">
+            <div id="colorPreview" class="color-preview"></div>
+            <div class="color-info">
+                <div class="color-value">
+                    <label>HEX:</label>
+                    <input type="text" id="hexValue" readonly>
+                    <button id="copyHex" class="copy-btn">Copy</button>
+                </div>
+                <div class="color-value">
+                    <label>RGB:</label>
+                    <input type="text" id="rgbValue" readonly>
+                    <button id="copyRgb" class="copy-btn">Copy</button>
+                </div>
+                <div class="color-value">
+                    <label>HSL:</label>
+                    <input type="text" id="hslValue" readonly>
+                    <button id="copyHsl" class="copy-btn">Copy</button>
+                </div>
+            </div>
+        </div>
+        <div id="colorHistory" class="color-history">
+            <h3>Recent Colors</h3>
+            <div id="historyList" class="history-list"></div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
